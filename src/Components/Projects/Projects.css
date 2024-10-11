@@ -1,0 +1,88 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto 5rem;
+  }
+
+  #projects .btn {
+    align-self: center;
+    margin: 2rem 0;
+  }
+
+  .project {
+    display: grid; /* Asegúrate de que esto esté aquí */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Coloca 3 columnas o más según el espacio */
+    grid-gap: 1rem; /* Espacio entre las tarjetas */
+  }
+
+  .card {
+    padding: 1rem;
+    background: var(--card-background, #333); /* Usa un color de fondo por defecto si no está definido */
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative; /* Para el posicionamiento de la superposición */
+    overflow: hidden; /* Para asegurar que los elementos hijos no se salgan de la tarjeta */
+  }
+
+  .card .project-bio h3 {
+    font-size: 0.9rem;
+  }
+
+  .card .project-bio p {
+    font-size: 0.83rem;
+  }
+  
+  /* Enlaces dentro de la tarjeta */
+  .card a {
+    color: #ffffff;
+    transition: 0.25s ease-in-out;
+    font-size: 1.1rem;
+    margin-right: 0.3rem;
+  }
+  
+  .card a:hover {
+    color: var(--primary-color);
+  }
+
+  /* Efectos al pasar el ratón sobre la tarjeta */
+  .card:hover {
+    box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .card:hover .project-info {
+    opacity: 1;
+  }
+  
+  /* Project Images */
+
+/* project 1 */
+.card:nth-child(1) {
+    background: url(../Images/64c2dab1-6a8f-4202-98f2-a9e963095816.jfif) center center/cover;
+  }
+  
+  /* Project 2 */
+  .card:nth-child(2) {
+    background: url(../Images/69bae04d-76c1-4b10-b5ed-47f63354b921.jfif) center center/cover;
+  }
+  
+  /* Project 3 */
+  .card:nth-child(3) {
+    background: url(../Images/AgusLoser.jfif) center center/cover;
+  }
+  
+  /* Project 4 */
+  .card:nth-child(4) {
+    background: url(../Images/fa7a2442-f483-4c8e-8e7b-5f649ca62a9b.jfif) center center/cover;
+  }
+  
+  /* Project 5 */
+  .card:nth-child(5) {
+    background: url(../Images/fb971518-54fa-46c6-8187-7e50706cba59.jfif) center center/cover;
+  }
+  
+  /* Project 6 */
+  .card:nth-child(6) {
+    background: url(../Images/voley.jfif) center center/cover;
+  }

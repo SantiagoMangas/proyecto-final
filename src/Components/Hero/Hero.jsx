@@ -1,15 +1,16 @@
 import React from 'react';
 import './Hero.css'; 
+import logo from '../Images/logo_prueba.jpeg';
 
 const Hero = () => {
   return (
     <section className="hero-container">
       <img
         className="profile-image"
-        src="assets/profile-image.svg"
+        src= {logo}
         alt="Profile Image"
       />
-      <h1>Hi I'm Franklin</h1>
+      <h1>Hola, soy Santiago</h1>
 
       <div className="content-text">
         <h2>Programador FullStack</h2>

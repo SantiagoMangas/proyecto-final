@@ -1,5 +1,7 @@
 import React from 'react';
 import './Navbar.css';
+import moon from '../Images/moon.svg';
+import sun from '../Images/sun.svg';
 
 const Navbar = () => {
   return (
@@ -15,25 +17,17 @@ const Navbar = () => {
           </h1>
           {/* Navbar links */}
           <ul className="nav-menu">
-            <li><a className="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a className="nav-link" href="#">CONTACT</a></li>
-            <li><a className="nav-link" href="#">BLOG</a></li>
-            <li>
-              <a
-                className="nav-link btn btn-primary"
-                href=""
-              >
-                RESUME <i className="fas fa-arrow-right"></i>
-              </a>
-            </li>
+            <li><a className="nav-link" href="#projects">PROYECTOS</a></li>
+            <li><a className="nav-link" href="#">CONTACTAME</a></li>
+            <li><a className="nav-link" href="#">SERVICIO</a></li>
           </ul>
 
           {/* Toggle switch */}
           <div className="theme-switch">
             <input type="checkbox" id="switch" />
             <label className="toggle-icons" htmlFor="switch">
-              <img className="moon" src="assets/moon.svg" alt="moon icon" />
-              <img className="sun" src="assets/sun.svg" alt="sun icon" />
+              <img className="moon" src= {moon} alt="moon icon" />
+              <img className="sun" src= {sun} alt="sun icon" />
             </label>
           </div>
 
