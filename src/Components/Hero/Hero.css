@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-container h1{
+    margin-top: 20px;
+  }
+  .hero-container h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+  }
+  .profile-image {
+    width: 150px;
+    border-radius: 50%;
+    animation: bounce 1s infinite alternate;
+  }
+  
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+  
+    to {
+      transform: translateY(-10px);
+    }
+  }
