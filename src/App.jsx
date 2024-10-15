@@ -1,17 +1,18 @@
-import React from 'react'
-import Hero from './Components/Hero/Hero'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/global.css';
-import Navbar from './Components/Navbar/Navbar';
-import Projects from './Components/Projects/Projects';
+import HomePage from './Pages/HomePage/HomePage';
+import ServicesPage from './Pages/ServicesPage/ServicesPage.jsx'; 
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Projects />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServicesPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

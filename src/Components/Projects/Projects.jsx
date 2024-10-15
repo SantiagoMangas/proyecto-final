@@ -42,7 +42,6 @@ const Projects = () => {
 
   return (
     <section id="projects" className="project-container container">
-      <div className="division"></div>
       <div className="content-text">
         <h2>Projects</h2>
         <p>Check out some of my personal and paid projects</p>
