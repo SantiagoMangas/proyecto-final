@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar';
 import { FaLaptopCode } from "react-icons/fa";
 import { CiImageOn } from "react-icons/ci";
 import { ImStatsBars } from "react-icons/im";
@@ -13,10 +12,9 @@ import './Services.css'
 const ServicesPage = () => {
   return (
     <section id="services" className="services">
-    <Navbar />
       <div className="container">
 
-        <div className="content-text">
+        <div className="services-text">
           <h2>Servicios</h2>
           <p>Experto y con amplia experiencia trabajando con HTML5, CSS3, Bootstrap 4, JavaScript y múltiples elementos relacionados con el desarrollo front-end responsive. Tengo el conocimiento más actualizado sobre diseño de interfaces de usuario (UI). </p>
         </div>

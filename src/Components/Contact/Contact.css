@@ -1,0 +1,82 @@
+.contact{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mapbox {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    border: 1px solid var(--jet);
+    overflow: hidden;
+  }
+  
+  .mapbox figure { height: 100%; }
+  
+  .mapbox iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+form{
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin: 25px;
+}
+form h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+form .input-box{
+    margin-top: 20px;
+}
+
+.input-box .field{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ddd;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+.input-box .field::mess{
+    height: 200px;
+    resize: none;
+}
+
+form button{
+    width: 100%;
+    height: 55px;
+    background: var(--primary-color);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--bg-secondary);
+    font-weight: 500;
+    margin-top: 25px;
+    transition: 0.5s;
+}
+
+form button:hover{
+    background: var(--bg-secondary);
+    color: var(--bg-primary);
+}

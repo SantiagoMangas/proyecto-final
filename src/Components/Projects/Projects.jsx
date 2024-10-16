@@ -48,17 +48,17 @@ const Projects = () => {
       </div>
 
       {/* Renderizando la lista de proyectos dinámicamente */}
-      <div className="project-container">
-        {projectList.map((project, index) => (
-          <Project
-            key={index}
-            name={project.name}
-            technologies={project.technologies}
-            githubLink={project.githubLink}
-            liveLink={project.liveLink}
-          />
-        ))}
-      </div>
+        <div className="project-grid">
+          {projectList.map((project, index) => (
+            <Project
+              key={index}
+              name={project.name}
+              technologies={project.technologies}
+              githubLink={project.githubLink}
+              liveLink={project.liveLink}
+            />
+          ))}
+        </div>
 
       <a href="#" className="btn btn-secondary" target="_blank">
         See More <i className="fas fa-arrow-right"></i>

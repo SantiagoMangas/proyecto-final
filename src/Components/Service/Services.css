@@ -13,28 +13,12 @@
     background: var(--secondary-color);
     border-radius: 50%;
     transition: 0.5s;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--orange-one);
   }
 
   .services .icon-box:hover .icon {
     background: var(--bg-primary);
-  }
-  
-  .content-text {
-    padding: 80px 0 30px;
-  }
-  
-  .content-text h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    color: var(--primary-color);
-    text-shadow:
-      -1px -1px 0 black,
-      -1px 1px 0 black,
-      1px 1px 0 black,
-      1px -1px 0 black
+    color: var(--orange-one);
   }
 
   .services .title {
