@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Projects/Projects.css';
+import { FaGithub } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 
 export const Project = ({ name, technologies, githubLink, liveLink }) => {
   return (
@@ -11,11 +13,11 @@ export const Project = ({ name, technologies, githubLink, liveLink }) => {
         </div>
         <div className="project-link">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github"></i>
+            <FaGithub />
           </a>
           {liveLink && (
             <a href={liveLink} target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-globe"></i>
+              <FaGlobe />
             </a>
           )}
         </div>

@@ -5,34 +5,34 @@ import "./Redes.css";
 const Redes = () => {
   return (
     <>
-         <h2 className="head-text">Let's Connect!!</h2>
-         <div className="app__footer-cards">
-            <div className="app__footer-card">
+         <h2 className="content-text">Contactame en mis redes!</h2>
+         <div className="footer-cards">
+            <div className="footer-card">
                <img src={images.email} />
-               <a href="mailto:tanishakayadav2110@gmail.com" className="p-text">
+               <a href="mailto:santimangas16@gmail.com" className="p-text">
                   Email
                </a>
             </div>
             
-            <div className="app__footer-card">
+            <div className="footer-card">
             
                <img src={images.twitter} />
-               <a href="https://twitter.com/tanishka__yadav" className="p-text">
+               <a href="#" className="p-text">
                Twitter
                </a>
             </div>
-            <div className="app__footer-card">
+            <div className="footer-card">
                <img src={images.linkedln} />
                <a
-                  href="https://www.linkedin.com/in/tanishkayadav/"
+                  href="https://www.linkedin.com/in/santiago-mangas/"
                   className="p-text"
                >
                   Linkedln
                </a>
             </div>
-            <div className="app__footer-card">
+            <div className="footer-card">
                <img src={images.github} />
-               <a href="https://github.com/Tanishka-dev" className="p-text">
+               <a href="https://github.com/SantiagoMangas" className="p-text">
                  GitHub
                </a>
             </div>

@@ -20,6 +20,7 @@ const Projects = () => {
       name: 'Project Three',
       technologies: 'React, Redux, SASS',
       githubLink: '#',
+      liveLink: '#',
     },
     {
       name: 'Project Four',
@@ -37,6 +38,7 @@ const Projects = () => {
       name: 'Project Six',
       technologies: 'React, Redux, SASS',
       githubLink: '#',
+      liveLink: '#',
     },
   ];
 

@@ -9,23 +9,21 @@
   margin: 2rem 0;
 }
 
-/* Estilos para la grilla de proyectos */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  grid-gap: 1.5rem; /* Espacio entre las tarjetas */
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 0.9rem; /* Espacio entre las tarjetas */
 }
 
 /* Estilos para las tarjetas de proyecto */
 .card {
   padding: 1rem;
   background-size: cover;
-  background-position: center;
   color: #ffffff;
   border-radius: 5px;
   transition: 0.4s ease-in-out;
   cursor: pointer;
-  position: relative;
   overflow: hidden; /* Asegura que los elementos hijos no se salgan de la tarjeta */
 }
 
@@ -39,7 +37,6 @@
 /* Efecto hover: oscurece la tarjeta, agranda la imagen, y muestra la información */
 .card:hover {
   box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
-  background-size: 110%; /* Agranda la imagen ligeramente cuando el mouse está sobre la tarjeta */
 }
 
 .card:hover .project-bio, .card:hover .project-info {
@@ -50,26 +47,36 @@
 /* Posicionamiento del contenido dentro de la tarjeta */
 .project-info {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.project-bio{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  top: 160px;
+  left: 10px;
 }
 
 /* Títulos y tecnologías en las tarjetas */
 .project-bio h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .project-bio p {
-  font-size: 0.9rem;
+  font-size: 0.83rem;
 }
 
 /* Enlaces dentro de las tarjetas */
 .card a {
   color: #ffffff;
   transition: 0.25s ease-in-out;
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
 }
 
 .card a:hover {
@@ -99,4 +106,18 @@
 
 .card:nth-child(6) {
   background: url(../Images/voley.jfif) center center/cover;
+}
+
+@media (max-width: 1000px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

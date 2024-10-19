@@ -1,38 +1,72 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import moon from '../Images/moon.svg';
 import sun from '../Images/sun.svg';
 
 const Navbar = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Cargar el tema guardado del localStorage cuando el componente se monta
+  useEffect(() => {
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    setIsDarkMode(currentTheme === 'dark');
+  }, []);
+
+  // Manejar el cambio de tema
+  const toggleTheme = () => {
+    const newTheme = isDarkMode ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // Manejar el menú de hamburguesa
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Cerrar el menú cuando se hace clic en un enlace
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header id="hero">
-      {/* Navbar */}
       <nav className="navbar">
         <div className="container">
           {/* Logo */}
           <h1 id="logo">
-            <a href="">
+            <Link to="/">
               <img src="" alt="Logo" />
-            </a>
+            </Link>
           </h1>
-          {/* Navbar links */}
-          <ul className="nav-menu">
-            <li><a className="nav-link" href="#projects">PROYECTOS</a></li>
-            <li><a className="nav-link" href="#">CONTACTAME</a></li>
-            <li><a className="nav-link" href="#">SERVICIO</a></li>
+          
+          {/* Menú de navegación */}
+          <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+            <li><Link className="nav-link" to="/" onClick={closeMenu}>PROYECTOS</Link></li>
+            <li><Link className="nav-link" to="/contact" onClick={closeMenu}>CONTACTAME</Link></li>
+            <li><Link className="nav-link" to="/services" onClick={closeMenu}>SERVICIOS</Link></li>
           </ul>
 
-          {/* Toggle switch */}
+          {/* Toggle switch para el tema */}
           <div className="theme-switch">
-            <input type="checkbox" id="switch" />
+            <input 
+              type="checkbox" 
+              id="switch" 
+              checked={isDarkMode} 
+              onChange={toggleTheme} // Cambia el tema
+            />
             <label className="toggle-icons" htmlFor="switch">
-              <img className="moon" src= {moon} alt="moon icon" />
-              <img className="sun" src= {sun} alt="sun icon" />
+              <img className="moon" src={moon} alt="moon icon" />
+              <img className="sun" src={sun} alt="sun icon" />
             </label>
           </div>
 
-          {/* Hamburger menu */}
-          <div className="hamburger">
+          {/* Menú de hamburguesa */}
+          <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
