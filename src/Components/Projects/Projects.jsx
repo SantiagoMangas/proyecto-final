@@ -1,42 +1,43 @@
 import React from 'react';
 import { Project } from './Project';
 import '../Projects/Projects.css';
+import {images} from '../../constants/images';
 
 const Projects = () => {
   const projectList = [
     {
-      name: 'Project One',
-      technologies: 'React, Redux, SASS',
-      githubLink: '#', // Reemplaza con el enlace real de GitHub
-      liveLink: '#', // Reemplaza con el enlace del proyecto en vivo
+      name: 'Proyecto Uno',
+      technologies: 'React, CSS, HTML, JS',
+      githubLink: '#', // Cambiar con el enlace git
+      liveLink: '#', // Cambiar con el enlace del proyecto
     },
     {
-      name: 'Project Two',
-      technologies: 'React, Redux, SASS',
+      name: 'Proyecto Dos',
+      technologies: 'React, CSS, HTML, JS',
       githubLink: '#',
       liveLink: '#',
     },
     {
-      name: 'Project Three',
-      technologies: 'React, Redux, SASS',
+      name: 'Proyecto Tres',
+      technologies: 'React, CSS, HTML, JS',
       githubLink: '#',
       liveLink: '#',
     },
     {
-      name: 'Project Four',
-      technologies: 'React, Redux, SASS',
+      name: 'Proyecto Cuatro',
+      technologies: 'React, CSS, HTML, JS',
       githubLink: '#',
       liveLink: '#',
     },
     {
-      name: 'Project Five',
-      technologies: 'React, Redux, SASS',
+      name: 'Proyecto Cinco',
+      technologies: 'React, CSS, HTML, JS',
       githubLink: '#',
       liveLink: '#',
     },
     {
-      name: 'Project Six',
-      technologies: 'React, Redux, SASS',
+      name: 'Proyecto Seis',
+      technologies: 'React, CSS, HTML, JS',
       githubLink: '#',
       liveLink: '#',
     },
@@ -44,9 +45,12 @@ const Projects = () => {
 
   return (
     <section id="projects" className="project-container container">
+      
+      <div class="division"></div>
+
       <div className="content-text">
-        <h2>Projects</h2>
-        <p>Check out some of my personal and paid projects</p>
+        <h2>Proyectos</h2>
+        <p>Mira algunos de mis proyectos personales y de la universidad!</p>
       </div>
 
       {/* Renderizando la lista de proyectos dinámicamente */}
@@ -63,9 +67,8 @@ const Projects = () => {
         </div>
 
       <a href="#" className="btn btn-secondary" target="_blank">
-        See More <i className="fas fa-arrow-right"></i>
+      Ver más... <i className="fas fa-arrow-right"></i>
       </a>
-
     </section>
   );
 };

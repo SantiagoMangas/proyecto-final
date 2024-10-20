@@ -14,10 +14,9 @@ const Hero = () => {
 
       <div className="content-text">
         <h2>Programador FullStack</h2>
-        <h2>products, brands, and experience.</h2>
+        <h2>desarrollando experiencias digitales.</h2>
         <p>
-          A Frontend Developer and Visual Designer with experience in web
-          design, brand identity, and product design.
+          Desarrollo de aplicaciones web, diseño de interfaces de usuario, y la creación de experiencias interactivas.
         </p>
       </div>
 

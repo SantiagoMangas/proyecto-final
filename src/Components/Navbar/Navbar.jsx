@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { images } from '../../constants';
 import moon from '../Images/moon.svg';
 import sun from '../Images/sun.svg';
 
@@ -40,7 +41,7 @@ const Navbar = () => {
           {/* Logo */}
           <h1 id="logo">
             <Link to="/">
-              <img src="" alt="Logo" />
+              <img src={images.logo} alt="Logo" />
             </Link>
           </h1>
           

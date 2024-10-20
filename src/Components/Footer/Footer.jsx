@@ -3,74 +3,40 @@ import { images } from "../../constants";
 import "./Footer.css";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <div className = 'footer'>
-        <div classNmae = 'sb-footer section__padding'>
-            <div className = 'sb-footer-links'>
-                <div className = 'sb-footer-links-div'>
-                    <h4>Para Negocios</h4>
-                    <a href = '/contact' >
-                        <p>Contactanos</p>
-                    </a>
-                    <a href = '/servicios' >
-                    <p>Servicios</p>
-                    </a>
-                    <a href = '/' >
-                    <p>Proyectos</p>
-                    </a>
-                </div>
-                <div className = 'sb-footer-links-div'>
-                    <h4>hola</h4>
-                    <a href = '/contact' >
-                        <p>Contactanos</p>
-                    </a>
-                    <a href = '/servicios' >
-                        <p>Servicios</p>
-                    </a>
-                    <a href = '/' >
-                        <p>Proyectos</p>
-                    </a>
-                </div>
-                <div className = 'sb-footer-links-div'>
-                    <h4>chau</h4>
-                    <a href = '/contact' >
-                        <p>Contactanos</p>
-                    </a>
-                    <a href = '/servicios' >
-                        <p>Servicios</p>
-                    </a>
-                    <a href = '/' >
-                        <p>Proyectos</p>
-                    </a>
-                </div>
-                <div className = 'sb-footer-links-div'>
-                    <h4>Comming soon</h4>
-                    <div className = 'redes'>
-                        <p> <img src = {images.email} alt=""/></p>
-                        <p> <img src = {images.twitter} alt=""/></p>
-                        <p> <img src = {images.linkedln} alt=""/></p>
-                        <p> <img src = {images.github} alt=""/></p>
-                    </div>
-                </div>
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:santimangas16@gmail.com">santimangas16@gmail.com</a>
 
-                <hr></hr>
-
-                <div className = 'sb-footer-below'>
-                    <div className = 'sb-footer-copyright'>
-                        <p>
-                            @{new Date().getFullYear()} Santiago Mangas. Todos los derechos reservados.
-                        </p>
-                    </div>
-                    <div className = 'sb-footer-below-links'>
-                        <a href = ''><div><p>hola</p></div></a>
-                        <a href = ''><div><p>hola</p></div></a>
-                        <a href = ''><div><p>hola</p></div></a>
-                        <a href = ''><div><p>hola</p></div></a>
-                    </div>
-                </div>
-            </div>
+        <div class="social">
+          <a href="mailto:santimangas16@gmail.com" target="_blank"
+            ><img src={images.email} alt="Email"
+          /></a>
+          <a href="#" target="_blank"><img src={images.twitter} alt="Twitter" /></a>
+          <a href="#" target="_blank"
+            ><img src={images.linkedln} alt="Linkedin"
+          /></a>
+          <a href="#" target="_blank"><img src={images.github} alt="GitHub" /></a>
         </div>
-    </div>
+
+        <div class="attribution">
+          <a
+            href="https://github.com/SantiagoMangas/proyecto-final"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={images.logo}
+              alt="attribution"
+              width="75px"
+            />
+          </a>
+        </div>
+        <small>Copyright &copy; Santiago Mangas {year}, Todos los derechos reservados</small>
+      </div>
+    </footer>
   )
 }
 

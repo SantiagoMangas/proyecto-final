@@ -27,11 +27,11 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: #ffcd42;
+  --primary-color: #fcb900;
   --secondary-color: #ffd35c;
   --bg-primary: #000000;
   --text-color: #ffffff;
-  --text-color-two: #222222;
+  --text-color-two: #332424;
   --bg-secondary: #ffffff;
   --card-background: #111111;
   --bg-secondary-two: #f4f4f4;
@@ -61,22 +61,6 @@ html {
     color: var(--text-color);
     font-family: "Raleway", sans-serif;
     line-height: 1.5;
-  }
-  .content-text {
-    text-align: center;
-    margin: 1.5rem 0;
-  }
-  
-  .content-text h2 {
-    font-size: 3rem;
-    line-height: 1.2;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .content-text p {
-    padding: 0.5rem;
-    margin: 0 auto;
-    max-width: 700px;
   }
   
   .btn{

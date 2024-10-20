@@ -1,3 +1,10 @@
+.division {
+  width: 100%;
+  height: 2px;
+  background-color: var(--card-background);
+  margin: 5.5rem 0;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -85,27 +92,27 @@
 
 /* Estilos para las imágenes de fondo en las tarjetas de proyecto */
 .card:nth-child(1) {
-  background: url(../Images/64c2dab1-6a8f-4202-98f2-a9e963095816.jfif) center center/cover;
+  background: url(../../assets/comingSoon.jpg) center center/cover;
 }
 
 .card:nth-child(2) {
-  background: url(../Images/69bae04d-76c1-4b10-b5ed-47f63354b921.jfif) center center/cover;
+  background: url(../../assets/comingSoon.jpg) center center/cover;
 }
 
 .card:nth-child(3) {
-  background: url(../Images/AgusLoser.jfif) center center/cover;
+  background: url(../../assets/comingSoon.jpg) center center/cover;
 }
 
 .card:nth-child(4) {
-  background: url(../Images/fa7a2442-f483-4c8e-8e7b-5f649ca62a9b.jfif) center center/cover;
+  background: url(../../assets/comingSoon.jpg) center center/cover;
 }
 
 .card:nth-child(5) {
-  background: url(../Images/fb971518-54fa-46c6-8187-7e50706cba59.jfif) center center/cover;
+  background: url(../../assets/comingSoon.jpg) center center/cover;
 }
 
 .card:nth-child(6) {
-  background: url(../Images/voley.jfif) center center/cover;
+  background: url(../../assets/comingSoon.jpg) center center/cover;
 }
 
 @media (max-width: 1000px) {
