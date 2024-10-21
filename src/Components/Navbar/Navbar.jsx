@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { images } from '../../constants';
+import images from '../../constants/images';
 import moon from '../Images/moon.svg';
 import sun from '../Images/sun.svg';
 

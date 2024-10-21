@@ -5,7 +5,7 @@ import linkedln from "../assets/linkedln.png";
 import logo from "../assets/logoSM.png";
 import comingSoon from "../assets/comingSoon.jpg";
 
-export default {
+const images = {
    email,
    twitter,
    github,
@@ -13,3 +13,5 @@ export default {
    logo,
    comingSoon,
 };
+
+export default images;

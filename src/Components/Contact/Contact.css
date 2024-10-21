@@ -45,6 +45,7 @@ form .input-box{
 
 .input-box .field{
     width: 100%;
+    field-sizing: content; /*solo para google123, lo saque de midudev*/
     height: 50px;
     background: transparent;
     border: 2px solid #ddd;
@@ -77,6 +78,6 @@ form button{
 }
 
 form button:hover{
-    background: var(--bg-secondary);
+    background: var(--orange);
     color: var(--bg-primary);
 }

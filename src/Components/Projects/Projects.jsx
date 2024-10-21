@@ -1,7 +1,6 @@
 import React from 'react';
 import { Project } from './Project';
 import '../Projects/Projects.css';
-import {images} from '../../constants/images';
 
 const Projects = () => {
   const projectList = [
@@ -46,7 +45,7 @@ const Projects = () => {
   return (
     <section id="projects" className="project-container container">
       
-      <div class="division"></div>
+      <div className="division"></div>
 
       <div className="content-text">
         <h2>Proyectos</h2>

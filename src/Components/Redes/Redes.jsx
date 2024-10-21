@@ -5,23 +5,24 @@ import "./Redes.css";
 const Redes = () => {
   return (
     <>
+          <div className="division"></div>
          <h2 className="content-text">Contactame en mis redes!</h2>
-         <div className="footer-cards">
-            <div className="footer-card">
+         <div className="cards">
+            <div className="card">
                <img src={images.email} />
                <a href="mailto:santimangas16@gmail.com" className="p-text">
                   Email
                </a>
             </div>
             
-            <div className="footer-card">
+            <div className="card">
             
                <img src={images.twitter} />
                <a href="#" className="p-text">
                Twitter
                </a>
             </div>
-            <div className="footer-card">
+            <div className="card">
                <img src={images.linkedln} />
                <a
                   href="https://www.linkedin.com/in/santiago-mangas/"
@@ -30,7 +31,7 @@ const Redes = () => {
                   Linkedln
                </a>
             </div>
-            <div className="footer-card">
+            <div className="card">
                <img src={images.github} />
                <a href="https://github.com/SantiagoMangas" className="p-text">
                  GitHub

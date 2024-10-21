@@ -7,10 +7,10 @@ const Footer = () => {
 
   return (
     <footer id="footer">
-      <div class="container">
+      <div className="container">
         <a href="mailto:santimangas16@gmail.com">santimangas16@gmail.com</a>
 
-        <div class="social">
+        <div className="social">
           <a href="mailto:santimangas16@gmail.com" target="_blank"
             ><img src={images.email} alt="Email"
           /></a>
@@ -21,7 +21,7 @@ const Footer = () => {
           <a href="#" target="_blank"><img src={images.github} alt="GitHub" /></a>
         </div>
 
-        <div class="attribution">
+        <div className="attribution">
           <a
             href="https://github.com/SantiagoMangas/proyecto-final"
             target="_blank"
