@@ -16,7 +16,7 @@ const Footer = () => {
           /></a>
           <a href="#" target="_blank"><img src={images.twitter} alt="Twitter" /></a>
           <a href="#" target="_blank"
-            ><img src={images.linkedln} alt="Linkedin"
+            ><img src={images.linkedin} alt="Linkedin"
           /></a>
           <a href="#" target="_blank"><img src={images.github} alt="GitHub" /></a>
         </div>

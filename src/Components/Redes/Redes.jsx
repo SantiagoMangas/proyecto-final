@@ -23,7 +23,7 @@ const Redes = () => {
                </a>
             </div>
             <div className="card">
-               <img src={images.linkedln} />
+               <img src={images.linkedin} />
                <a
                   href="https://www.linkedin.com/in/santiago-mangas/"
                   className="p-text"
