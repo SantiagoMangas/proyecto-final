@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Logo */}
           <h1 id="logo">
             <Link to="/">
-              <img src={images.logo} alt="Logo" />
+              <img src={images.logoSM} alt="Logo" />
             </Link>
           </h1>
           

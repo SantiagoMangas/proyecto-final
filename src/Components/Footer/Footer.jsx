@@ -28,7 +28,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={images.logo}
+              src={images.logoSM}
               alt="attribution"
               width="75px"
             />
