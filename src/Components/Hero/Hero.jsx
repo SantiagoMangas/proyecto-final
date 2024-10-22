@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
 
       <a
-        href=""
+        href="/contact"
         className="btn btn-secondary"
         target="_blank"
         rel="noopener noreferrer"

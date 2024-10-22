@@ -15,10 +15,12 @@ const Footer = () => {
             ><img src={images.email} alt="Email"
           /></a>
           <a href="#" target="_blank"><img src={images.twitter} alt="Twitter" /></a>
-          <a href="#" target="_blank"
-            ><img src={images.linkedin} alt="Linkedin"
-          /></a>
-          <a href="#" target="_blank"><img src={images.github} alt="GitHub" /></a>
+          <a href="https://www.linkedin.com/in/santiago-mangas/" target="_blank">
+            <img src={images.linkedin} alt="Linkedin"/>
+          </a>
+          <a href="https://github.com/SantiagoMangas" target="_blank">
+            <img src={images.github} alt="GitHub" />
+          </a>
         </div>
 
         <div className="attribution">
