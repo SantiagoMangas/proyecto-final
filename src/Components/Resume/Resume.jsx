@@ -7,11 +7,8 @@ const Resume = () => {
     <div className="container">
 
       <div className="services-text">
-        <h2>Resume</h2>
-        <p> Hard-working individual with proficiency in Bootstrap, Javascript, Wordpress as well as ability to
-          communicate effectively in a team setting, and possessing a strong willingness to learn about new web
-          technologies.
-          Always prepare to give the best in order to ensure better outcome.</p>
+        <h2>Resumen de mi</h2>
+        <p> Persona comprometida, con conocimientos en desarrollo web front-end y back-end. Capaz de trabajar en equipo y siempre dispuesto a aprender y mejorar en nuevas tecnologías. Siempre estoy dispuesto para trabajar en equipo y lograr resultados eficientes, con el objetivo de aportar valor en cada proyecto en el que participo.</p>
       </div>
 
       <div className="row">

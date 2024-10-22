@@ -16,46 +16,39 @@ const ServicesPage = () => {
 
         <div className="services-text">
           <h2>Servicios</h2>
-          <p>Experto y con amplia experiencia trabajando con HTML5, CSS3, Bootstrap 4, JavaScript y múltiples elementos relacionados con el desarrollo front-end responsive. Tengo el conocimiento más actualizado sobre diseño de interfaces de usuario (UI). </p>
+          <p>Tengo conocimientos sólidos en HTML, CSS, JavaScript y React. Estoy en constante aprendizaje y mejora de mis habilidades para crear interfaces de usuario atractivas y funcionales. Además, cuento con capacidad de desarrollo back-end utilizando Java, Node.js, Express.js, Spring Boot y bases de datos SQL.</p>
         </div>
 
         <div className="row">
           <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div className="icon"><FaLaptopCode /></div>
-            <h3 className="title">Web Development</h3>
-            <p className="description">A passion for knowledge. Ability to plan for
-              everything. Great debugging skills. “Accelerated Failure” Mentality.</p>
+            <h3 className="title">Desarrollo Web</h3>
+            <p className="description">Me apasiona aprender y mejorar. Puedo planificar soluciones para problemas y desarrollar código limpio y funcional.</p>
           </div>
           <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div className="icon"><ImStatsBars/></div>
-            <h3 className="title">Responsive Design</h3>
-            <p className="description">Less Effort.
-              Smooth User Experience. User Friendly website. Mobile Segment. Search Engine
-              Optimization (SEO) .</p>
+            <h3 className="title">Diseño Responsive</h3>
+            <p className="description">Desarrollo sitios web adaptables para distintos dispositivos, con una experiencia de usuario fluida y optimizada para SEO.</p>
           </div>
           <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div className="icon"><BiWorld/></div>
-            <h3 className="title">Creative Look</h3>
-            <p className="description">Accessible to All Users. Well Planned Information Architecture. Fast Load Times.
-              Effective Navigation.</p>
+            <h3 className="title">Apariencia Creativa</h3>
+            <p className="description">Me esfuerzo por diseñar sitios web accesibles, con una arquitectura de información clara y tiempos de carga rápidos para una navegación efectiva.</p>
           </div>
           <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div className="icon"><CiImageOn/></div>
-            <h3 className="title">Clean Code</h3>
-            <p className="description">Understandable and readable code, Always following updated structure, simple and
-              focused.</p>
+            <h3 className="title">Código Limpio</h3>
+            <p className="description">Me aseguro de escribir código sencillo, entendible y bien estructurado, siguiendo buenas prácticas de desarrollo.</p>
           </div>
           <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div className="icon"><VscSettings/></div>
-            <h3 className="title">Fast Support</h3>
-            <p className="description">I am available except from 12 PM to 8 PM (GMT +6) Bangladesh time. Services can be
-              provided 7 days in a week.</p>
+            <h3 className="title">Soporte Rápido</h3>
+            <p className="description">Estoy disponible para resolver problemas o realizar ajustes en horarios flexibles, adaptándome a las necesidades del proyecto.</p>
           </div>
           <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
             <div className="icon"><FaCalendarCheck/></div>
-            <h4 className="title">Branding Identity</h4>
-            <p className="description"> Well-Formatted Content That Is Easy to Scan, Contrasting
-              Color Scheme which make your brand unique and desired.</p>
+            <h4 className="title">Identidad de Marca</h4>
+            <p className="description"> Ayudo a crear una identidad visual coherente para tu marca, utilizando colores contrastantes y contenido bien estructurado para destacar.</p>
           </div>
         </div>
 

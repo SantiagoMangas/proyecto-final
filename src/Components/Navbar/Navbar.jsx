@@ -35,9 +35,8 @@ const Navbar = () => {
   };
 
   return (
-    <header id="hero">
       <nav className="navbar">
-        <div className="container">
+        <div className="navbar-container">
           {/* Logo */}
           <h1 id="logo">
             <Link to="/">
@@ -50,23 +49,22 @@ const Navbar = () => {
             <li><Link className="nav-link" to="/" onClick={closeMenu}>PROYECTOS</Link></li>
             <li><Link className="nav-link" to="/contact" onClick={closeMenu}>CONTACTAME</Link></li>
             <li><Link className="nav-link" to="/services" onClick={closeMenu}>SERVICIOS</Link></li>
+
+            {/* Toggle switch para el tema */}
+            <li className="theme-switch">
+              <input 
+                type="checkbox" 
+                id="switch" 
+                checked={isDarkMode} 
+                onChange={toggleTheme} // Cambia el tema
+              />
+              <label className="toggle-icons" htmlFor="switch">
+                <img className="moon" src={moon} alt="moon icon" />
+                <img className="sun" src={sun} alt="sun icon" />
+              </label>
+            </li>
           </ul>
 
-          {/* Toggle switch para el tema */}
-          <div className="theme-switch">
-            <input 
-              type="checkbox" 
-              id="switch" 
-              checked={isDarkMode} 
-              onChange={toggleTheme} // Cambia el tema
-            />
-            <label className="toggle-icons" htmlFor="switch">
-              <img className="moon" src={moon} alt="moon icon" />
-              <img className="sun" src={sun} alt="sun icon" />
-            </label>
-          </div>
-
-          {/* Menú de hamburguesa */}
           <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
             <span className="bar"></span>
             <span className="bar"></span>
@@ -74,7 +72,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </header>
   );
 };
 

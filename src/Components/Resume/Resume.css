@@ -3,7 +3,7 @@
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #050d18;
+    color: var(--text-color);
   }
 
   .resume .resume-item {
