@@ -8,8 +8,7 @@ const Resume = () => {
 
       <div className="services-text">
         <h2>Resumen de mi</h2>
-        <p> Persona comprometida, con conocimientos en desarrollo web front-end y back-end. Capaz de trabajar en equipo y siempre dispuesto a aprender y mejorar en nuevas tecnologías. Siempre estoy dispuesto para trabajar en equipo y lograr resultados eficientes, con el objetivo de aportar valor en cada proyecto en el que participo.</p>
-      </div>
+        <p> Profesional comprometido con sólidos conocimientos en desarrollo web, tanto front-end como back-end. Tengo la capacidad de trabajar en equipo y estoy siempre dispuesto a aprender y adaptarme a nuevas tecnologías. Mi enfoque es lograr resultados eficientes y aportar valor en cada proyecto en el que participo. </p>      </div>
 
       <div className="row">
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
