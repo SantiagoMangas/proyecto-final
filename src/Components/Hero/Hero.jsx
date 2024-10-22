@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css'; 
 import images from '../../constants/images';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -20,14 +21,12 @@ const Hero = () => {
         </p>
       </div>
 
-      <a
-        href="/contact"
-        className="btn btn-secondary"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link 
+        className="btn btn-secondary" // Asegúrate de que este estilo esté definido en tu CSS
+        to="/contact" // Cambia esto a la ruta correcta
       >
         Contactame!
-      </a>
+      </Link>
     </section>
   );
 };
